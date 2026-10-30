@@ -1,0 +1,416 @@
+mysql> INSERT INTO User (id, email, password) VALUES
+    -> (51, 'UsEr51@newmail.ua', '123'), (52, 'UsEr51@newmail.ua', '12345'), (53, 'UsEr53@newmail.ua', '1234'), 
+	(54, 'UsEr54@newmail.ua', '12312'), (55, 'UsEr55@newmail.ua', '123123');
+Query OK, 5 rows affected (0.01 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+mysql> SELECT * FROM User;
++----+--------------------+------------+
+| id | email              | password   |
++----+--------------------+------------+
+|  1 | user1@example.com  | pass_abc1  |
+|  2 | user2@example.com  | pass_abc2  |
+|  3 | user3@example.com  | pass_abc3  |
+|  4 | user4@example.com  | pass_abc4  |
+|  5 | user5@example.com  | pass_abc5  |
+|  6 | user6@example.com  | pass_abc6  |
+|  7 | user7@example.com  | pass_abc7  |
+|  8 | user8@example.com  | pass_abc8  |
+|  9 | user9@example.com  | pass_abc9  |
+| 10 | user10@example.com | pass_abc10 |
+| 11 | user11@example.com | pass_abc11 |
+| 12 | user12@example.com | pass_abc12 |
+| 13 | user13@example.com | pass_abc13 |
+| 14 | user14@example.com | pass_abc14 |
+| 15 | user15@example.com | pass_abc15 |
+| 16 | user16@example.com | pass_abc16 |
+| 17 | user17@example.com | pass_abc17 |
+| 18 | user18@example.com | pass_abc18 |
+| 19 | user19@example.com | pass_abc19 |
+| 20 | user20@example.com | pass_abc20 |
+| 21 | user21@example.com | pass_abc21 |
+| 22 | user22@example.com | pass_abc22 |
+| 23 | user23@example.com | pass_abc23 |
+| 24 | user24@example.com | pass_abc24 |
+| 25 | user25@example.com | pass_abc25 |
+| 26 | user26@example.com | pass_abc26 |
+| 27 | user27@example.com | pass_abc27 |
+| 28 | user28@example.com | pass_abc28 |
+| 29 | user29@example.com | pass_abc29 |
+| 30 | user30@example.com | pass_abc30 |
+| 31 | user31@example.com | pass_abc31 |
+| 32 | user32@example.com | pass_abc32 |
+| 33 | user33@example.com | pass_abc33 |
+| 34 | user34@example.com | pass_abc34 |
+| 35 | user35@example.com | pass_abc35 |
+| 36 | user36@example.com | pass_abc36 |
+| 37 | user37@example.com | pass_abc37 |
+| 38 | user38@example.com | pass_abc38 |
+| 39 | user39@example.com | pass_abc39 |
+| 40 | user40@example.com | pass_abc40 |
+| 41 | user41@example.com | pass_abc41 |
+| 42 | user42@example.com | pass_abc42 |
+| 43 | user43@example.com | pass_abc43 |
+| 44 | user44@example.com | pass_abc44 |
+| 45 | user45@example.com | pass_abc45 |
+| 46 | user46@example.com | pass_abc46 |
+| 47 | user47@example.com | pass_abc47 |
+| 48 | user48@example.com | pass_abc48 |
+| 49 | user49@example.com | pass_abc49 |
+| 50 | user50@example.com | pass_abc50 |
+| 51 | UsEr51@newmail.ua  | 123        |
+| 52 | UsEr51@newmail.ua  | 12345      |
+| 53 | UsEr53@newmail.ua  | 1234       |
+| 54 | UsEr54@newmail.ua  | 12312      |
+| 55 | UsEr55@newmail.ua  | 123123     |
++----+--------------------+------------+
+55 rows in set (0.00 sec)
+
+mysql> SELECT id, email FROM User;
++----+--------------------+
+| id | email              |
++----+--------------------+
+|  1 | user1@example.com  |
+|  2 | user2@example.com  |
+|  3 | user3@example.com  |
+|  4 | user4@example.com  |
+|  5 | user5@example.com  |
+|  6 | user6@example.com  |
+|  7 | user7@example.com  |
+|  8 | user8@example.com  |
+|  9 | user9@example.com  |
+| 10 | user10@example.com |
+| 11 | user11@example.com |
+| 12 | user12@example.com |
+| 13 | user13@example.com |
+| 14 | user14@example.com |
+| 15 | user15@example.com |
+| 16 | user16@example.com |
+| 17 | user17@example.com |
+| 18 | user18@example.com |
+| 19 | user19@example.com |
+| 20 | user20@example.com |
+| 21 | user21@example.com |
+| 22 | user22@example.com |
+| 23 | user23@example.com |
+| 24 | user24@example.com |
+| 25 | user25@example.com |
+| 26 | user26@example.com |
+| 27 | user27@example.com |
+| 28 | user28@example.com |
+| 29 | user29@example.com |
+| 30 | user30@example.com |
+| 31 | user31@example.com |
+| 32 | user32@example.com |
+| 33 | user33@example.com |
+| 34 | user34@example.com |
+| 35 | user35@example.com |
+| 36 | user36@example.com |
+| 37 | user37@example.com |
+| 38 | user38@example.com |
+| 39 | user39@example.com |
+| 40 | user40@example.com |
+| 41 | user41@example.com |
+| 42 | user42@example.com |
+| 43 | user43@example.com |
+| 44 | user44@example.com |
+| 45 | user45@example.com |
+| 46 | user46@example.com |
+| 47 | user47@example.com |
+| 48 | user48@example.com |
+| 49 | user49@example.com |
+| 50 | user50@example.com |
+| 51 | UsEr51@newmail.ua  |
+| 52 | UsEr51@newmail.ua  |
+| 53 | UsEr53@newmail.ua  |
+| 54 | UsEr54@newmail.ua  |
+| 55 | UsEr55@newmail.ua  |
++----+--------------------+
+55 rows in set (0.00 sec)
+
+mysql> SELECT id, password FROM User WHERE id > 30;
++----+------------+
+| id | password   |
++----+------------+
+| 31 | pass_abc31 |
+| 32 | pass_abc32 |
+| 33 | pass_abc33 |
+| 34 | pass_abc34 |
+| 35 | pass_abc35 |
+| 36 | pass_abc36 |
+| 37 | pass_abc37 |
+| 38 | pass_abc38 |
+| 39 | pass_abc39 |
+| 40 | pass_abc40 |
+| 41 | pass_abc41 |
+| 42 | pass_abc42 |
+| 43 | pass_abc43 |
+| 44 | pass_abc44 |
+| 45 | pass_abc45 |
+| 46 | pass_abc46 |
+| 47 | pass_abc47 |
+| 48 | pass_abc48 |
+| 49 | pass_abc49 |
+| 50 | pass_abc50 |
+| 51 | 123        |
+| 52 | 12345      |
+| 53 | 1234       |
+| 54 | 12312      |
+| 55 | 123123     |
++----+------------+
+25 rows in set (0.00 sec)
+
+mysql> SELECT id, email FROM User WHERE id > 40 AND id <=53;
++----+--------------------+
+| id | email              |
++----+--------------------+
+| 41 | user41@example.com |
+| 42 | user42@example.com |
+| 43 | user43@example.com |
+| 44 | user44@example.com |
+| 45 | user45@example.com |
+| 46 | user46@example.com |
+| 47 | user47@example.com |
+| 48 | user48@example.com |
+| 49 | user49@example.com |
+| 50 | user50@example.com |
+| 51 | UsEr51@newmail.ua  |
+| 52 | UsEr51@newmail.ua  |
+| 53 | UsEr53@newmail.ua  |
++----+--------------------+
+13 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Content ORDER BY title DESC LIMIT 4;
++----+---------+-------------+------------+--------------+
+| id | title   | genre       | age_rating | release_year |
++----+---------+-------------+------------+--------------+
+|  9 | Movie 9 | Documentary | G          |         2021 |
+|  8 | Movie 8 | Comedy      | PG-13      |         2017 |
+|  7 | Movie 7 | Action      | R          |         2020 |
+|  6 | Movie 6 | Animation   | G          |         2023 |
++----+---------+-------------+------------+--------------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT u.email, p.title AS plan_title, s.end_date
+    -> FROM `User` u
+    -> JOIN Subscription s     ON s.user_id = u.id
+    -> JOIN SubscriptionPlan p ON p.id = s.plan_id
+    -> ORDER BY u.email;
++--------------------+------------------+------------+
+| email              | plan_title       | end_date   |
++--------------------+------------------+------------+
+| user1@example.com  | Basic Monthly    | 2026-12-31 |
+| user10@example.com | Basic Annual     | 2027-02-10 |
+| user11@example.com | Standard Annual  | 2027-03-20 |
+| user12@example.com | Premium Annual   | 2027-04-25 |
+| user13@example.com | Basic Monthly    | 2026-12-31 |
+| user14@example.com | Standard Monthly | 2026-11-30 |
+| user15@example.com | Premium Monthly  | 2026-10-15 |
+| user16@example.com | Basic Annual     | 2027-01-01 |
+| user17@example.com | Standard Annual  | 2027-05-20 |
+| user18@example.com | Premium Annual   | 2027-06-15 |
+| user19@example.com | Basic Monthly    | 2026-12-01 |
+| user2@example.com  | Standard Monthly | 2026-11-30 |
+| user20@example.com | Standard Monthly | 2026-09-30 |
+| user21@example.com | Premium Monthly  | 2026-08-15 |
+| user22@example.com | Basic Annual     | 2027-02-10 |
+| user23@example.com | Standard Annual  | 2027-03-20 |
+| user24@example.com | Premium Annual   | 2027-04-25 |
+| user25@example.com | Basic Monthly    | 2026-12-31 |
+| user26@example.com | Standard Monthly | 2026-11-30 |
+| user27@example.com | Premium Monthly  | 2026-10-15 |
+| user28@example.com | Basic Annual     | 2027-01-01 |
+| user29@example.com | Standard Annual  | 2027-05-20 |
+| user3@example.com  | Premium Monthly  | 2026-10-15 |
+| user30@example.com | Premium Annual   | 2027-06-15 |
+| user31@example.com | Basic Monthly    | 2026-12-01 |
+| user32@example.com | Standard Monthly | 2026-09-30 |
+| user33@example.com | Premium Monthly  | 2026-08-15 |
+| user34@example.com | Basic Annual     | 2027-02-10 |
+| user35@example.com | Standard Annual  | 2027-03-20 |
+| user36@example.com | Premium Annual   | 2027-04-25 |
+| user37@example.com | Basic Monthly    | 2026-12-31 |
+| user38@example.com | Standard Monthly | 2026-11-30 |
+| user39@example.com | Premium Monthly  | 2026-10-15 |
+| user4@example.com  | Basic Annual     | 2027-01-01 |
+| user40@example.com | Basic Annual     | 2027-01-01 |
+| user41@example.com | Standard Annual  | 2027-05-20 |
+| user42@example.com | Premium Annual   | 2027-06-15 |
+| user43@example.com | Basic Monthly    | 2026-12-01 |
+| user44@example.com | Standard Monthly | 2026-09-30 |
+| user45@example.com | Premium Monthly  | 2026-08-15 |
+| user46@example.com | Basic Annual     | 2027-02-10 |
+| user47@example.com | Standard Annual  | 2027-03-20 |
+| user48@example.com | Premium Annual   | 2027-04-25 |
+| user49@example.com | Basic Monthly    | 2026-12-31 |
+| user5@example.com  | Standard Annual  | 2027-05-20 |
+| user50@example.com | Standard Monthly | 2026-11-30 |
+| user6@example.com  | Premium Annual   | 2027-06-15 |
+| user7@example.com  | Basic Monthly    | 2026-12-01 |
+| user8@example.com  | Standard Monthly | 2026-09-30 |
+| user9@example.com  | Premium Monthly  | 2026-08-15 |
++--------------------+------------------+------------+
+50 rows in set (0.00 sec)
+
+mysql> SELECT DISTINCT u.email
+    -> FROM User u
+    -> WHERE u.id IN (
+    -> SELECT w.user_id
+    -> FROM WatchHistory w
+    -> JOIN Content c ON c.id = w.content_id
+    -> WHERE c.genre = 'Horror'
+    -> );
++-------------------+
+| email             |
++-------------------+
+| user1@example.com |
+| user3@example.com |
+| user5@example.com |
+| user7@example.com |
+| user9@example.com |
++-------------------+
+5 rows in set (0.00 sec)	
+
+mysql> SELECT u.*
+    -> FROM `User` u
+    -> WHERE EXISTS (
+    -> SELECT 1 FROM Subscription s
+    -> WHERE s.user_id = u.id
+    -> );
++----+--------------------+------------+
+| id | email              | password   |
++----+--------------------+------------+
+|  1 | user1@example.com  | pass_abc1  |
+|  2 | user2@example.com  | pass_abc2  |
+|  3 | user3@example.com  | pass_abc3  |
+|  4 | user4@example.com  | pass_abc4  |
+|  5 | user5@example.com  | pass_abc5  |
+|  6 | user6@example.com  | pass_abc6  |
+|  7 | user7@example.com  | pass_abc7  |
+|  8 | user8@example.com  | pass_abc8  |
+|  9 | user9@example.com  | pass_abc9  |
+| 10 | user10@example.com | pass_abc10 |
+| 11 | user11@example.com | pass_abc11 |
+| 12 | user12@example.com | pass_abc12 |
+| 13 | user13@example.com | pass_abc13 |
+| 14 | user14@example.com | pass_abc14 |
+| 15 | user15@example.com | pass_abc15 |
+| 16 | user16@example.com | pass_abc16 |
+| 17 | user17@example.com | pass_abc17 |
+| 18 | user18@example.com | pass_abc18 |
+| 19 | user19@example.com | pass_abc19 |
+| 20 | user20@example.com | pass_abc20 |
+| 21 | user21@example.com | pass_abc21 |
+| 22 | user22@example.com | pass_abc22 |
+| 23 | user23@example.com | pass_abc23 |
+| 24 | user24@example.com | pass_abc24 |
+| 25 | user25@example.com | pass_abc25 |
+| 26 | user26@example.com | pass_abc26 |
+| 27 | user27@example.com | pass_abc27 |
+| 28 | user28@example.com | pass_abc28 |
+| 29 | user29@example.com | pass_abc29 |
+| 30 | user30@example.com | pass_abc30 |
+| 31 | user31@example.com | pass_abc31 |
+| 32 | user32@example.com | pass_abc32 |
+| 33 | user33@example.com | pass_abc33 |
+| 34 | user34@example.com | pass_abc34 |
+| 35 | user35@example.com | pass_abc35 |
+| 36 | user36@example.com | pass_abc36 |
+| 37 | user37@example.com | pass_abc37 |
+| 38 | user38@example.com | pass_abc38 |
+| 39 | user39@example.com | pass_abc39 |
+| 40 | user40@example.com | pass_abc40 |
+| 41 | user41@example.com | pass_abc41 |
+| 42 | user42@example.com | pass_abc42 |
+| 43 | user43@example.com | pass_abc43 |
+| 44 | user44@example.com | pass_abc44 |
+| 45 | user45@example.com | pass_abc45 |
+| 46 | user46@example.com | pass_abc46 |
+| 47 | user47@example.com | pass_abc47 |
+| 48 | user48@example.com | pass_abc48 |
+| 49 | user49@example.com | pass_abc49 |
+| 50 | user50@example.com | pass_abc50 |
++----+--------------------+------------+
+50 rows in set (0.00 sec)
+
+mysql> SELECT c1.genre
+    -> FROM Content c1
+    -> WHERE (
+    -> SELECT COUNT(*) FROM Content c2
+    -> WHERE c2.genre = c1.genre
+    -> ) >= 10;
++--------+
+| genre  |
++--------+
+| Action |
+| Comedy |
+| Action |
+| Comedy |
+| Action |
+| Comedy |
+| Action |
+| Comedy |
+| Action |
+| Comedy |
+| Action |
+| Comedy |
+| Action |
+| Comedy |
+| Action |
+| Comedy |
+| Action |
+| Comedy |
+| Action |
+| Comedy |
++--------+
+20 rows in set (0.00 sec)
+
+//Це краще вводити з DISTINCT
+mysql> SELECT DISTINCT c1.genre
+    -> FROM Content c1
+    -> WHERE (
+    -> SELECT COUNT(*) 
+    -> FROM Content c2
+    -> WHERE c2.genre = c1.genre
+    -> ) >= 10;
++--------+
+| genre  |
++--------+
+| Action |
+| Comedy |
++--------+
+2 rows in set (0.01 sec)
+
+mysql> SELECT p.title
+    -> FROM SubscriptionPlan p
+    -> WHERE NOT EXISTS (
+    -> SELECT 1 FROM Subscription s
+    -> WHERE s.plan_id = p.id
+    -> AND s.end_date <= '2027-01-01'
+    -> );
++-----------------+
+| title           |
++-----------------+
+| Standard Annual |
+| Premium Annual  |
+| Student Plan    |
+| Family Plan     |
+| Trial Plan      |
+| VIP Plan        |
++-----------------+
+6 rows in set (0.00 sec)
+
+mysql> SELECT p.title, p.price
+    -> FROM SubscriptionPlan p
+    -> WHERE p.price > (
+    -> SELECT AVG(price) 
+    -> FROM SubscriptionPlan
+    -> );
++-----------------+-------+
+| title           | price |
++-----------------+-------+
+| Standard Annual |  2000 |
+| Premium Annual  |  3000 |
+| VIP Plan        |  5000 |
++-----------------+-------+
+3 rows in set (0.00 sec)
